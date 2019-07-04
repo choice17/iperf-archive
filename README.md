@@ -177,3 +177,19 @@
 </tbody></table>
 <p>See also <a href="https://github.com/esnet/iperf" target="_blank">https://github.com/esnet/iperf</a></p>
 
+h2. Example
+
+```bash
+### SERVER side ####  
+ $> iperf3 -p <port> -f k -i 1  
+-----------------------------------------------------------  
+Server listening on xxxx  
+-----------------------------------------------------------   
+```
+```bash
+### Client side ####  
+ $> iperf3 -c <host-ip> -p <port> -O 1 -Z  
+Connecting to host 192.168.xx.xxx, port xxxx  
+[  4] local 192.168.xx.xxx port 44088 connected to 192.168.xx.xxx port xxxx  
+[ ID] Interval           Transfer     Bandwidth         
+```
